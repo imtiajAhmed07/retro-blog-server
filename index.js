@@ -49,7 +49,7 @@ client.connect(err =>{
                     console.log(error)
                     res.status(500).send({ msg: "Failed to upload Image" });
                 }
-                console.log(result.insertedCount > 0)
+                console.log(result.insertedCount)
                 res.send(result.insertedCount > 0)
             })
         })
