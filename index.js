@@ -58,7 +58,7 @@ client.connect(err =>{
 
     // get blog from here .....
     app.get('/blogs', (req, res) =>{
-        blogPost.findOne().toArray((err, items) =>{
+        blogPost.find().toArray((err, items) =>{
             res.send(items)
         })
     })
